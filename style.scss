@@ -1,0 +1,94 @@
+$black-color: #000;
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 150px;
+    margin: 10vh auto;
+    background: rgb(223, 17, 17);
+}
+
+.header__h2 {
+    position: absolute;
+    top: 10px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.header__input {
+    display: block;
+    width: 200px;
+    height: 100px;
+    height: 20px;
+}
+
+.header__button {
+    display: block;
+    width: 50px;
+    padding: 4px;
+    background: #cccccc;
+    text-align: center;
+    cursor: pointer;
+    transition: 3s;
+    -webkit-transition: 3s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+}
+
+.tasks {
+    position: relative;
+    width: 360px;
+    height: auto;
+    margin: -65px auto;
+}
+
+.tasks__li {
+    position: relative;
+    margin-left: -40px;
+    display: block;
+    width: 400px;
+    color: $black-color;
+    background-color: #eeeeee;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Arial',sans-serif;
+}
+
+.tasks__li-checked {
+    background: rgb(94, 93, 93);
+    color: #fff;
+    text-decoration: line-through;
+}
+.tasks__li::before {
+    display: none;
+    content: '\2714';
+    position: absolute;
+    left: 5px;
+}
+
+.tasks__li:hover {
+    background: rgb(110, 108, 108);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.tasks__li:nth-child(odd){
+    color: $black-color;
+    background: #f9f9f9;
+}
+
+
+
+
+.tasks__close {
+    position: absolute;
+    right: 5px;
+}
