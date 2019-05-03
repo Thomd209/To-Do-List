@@ -52,20 +52,24 @@ $black-color: #000;
     display: block;
     width: 400px;
     color: $black-color;
-    background-color: #eeeeee;
+    background-color: #eee;
     text-align: center;
     cursor: pointer;
     font-size: 18px;
     font-family: 'Arial',sans-serif;
 }
 
+.tasks__li-border:not(:last-child) {
+    border-bottom: 1px solid #000;
+}
+
 .tasks__li-checked {
-    background: rgb(94, 93, 93);
+    background: rgb(10, 10, 10);
     color: #fff;
     text-decoration: line-through;
 }
-.tasks__li::before {
-    display: none;
+
+.tasks__li-checked::before {
     content: '\2714';
     position: absolute;
     left: 5px;
@@ -80,10 +84,7 @@ $black-color: #000;
     -o-transition: 0.5s;
 }
 
-.tasks__li:nth-child(odd){
-    color: $black-color;
-    background: #f9f9f9;
-}
+
 
 
 

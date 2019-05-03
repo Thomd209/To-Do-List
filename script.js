@@ -6,6 +6,7 @@ function addTask(){
     var ul = document.querySelector('.tasks');
     var li = document.createElement('li');
     li.className = 'tasks__li';
+    li.classList.add('tasks__li-border');
     li.style.listStyleType = 'none';
     li.innerHTML = input.value;
     ul.appendChild(li);

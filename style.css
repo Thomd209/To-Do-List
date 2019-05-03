@@ -45,19 +45,21 @@
   display: block;
   width: 400px;
   color: #000;
-  background-color: #eeeeee;
+  background-color: #eee;
   text-align: center;
   cursor: pointer;
   font-size: 18px;
   font-family: 'Arial',sans-serif; }
 
+.tasks__li-border:not(:last-child) {
+  border-bottom: 1px solid #000; }
+
 .tasks__li-checked {
-  background: #5e5d5d;
+  background: #0a0a0a;
   color: #fff;
   text-decoration: line-through; }
 
-.tasks__li::before {
-  display: none;
+.tasks__li-checked::before {
   content: '\2714';
   position: absolute;
   left: 5px; }
@@ -69,10 +71,6 @@
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s; }
-
-.tasks__li:nth-child(odd) {
-  color: #000;
-  background: #f9f9f9; }
 
 .tasks__close {
   position: absolute;
